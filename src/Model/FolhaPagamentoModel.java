@@ -15,6 +15,8 @@ public class FolhaPagamentoModel {
     private double irrf;
     private double salarioLiquido;
 
+  
+
     public FolhaPagamentoModel(double salarioBruto) {
         this.salarioBruto = salarioBruto;
     }
