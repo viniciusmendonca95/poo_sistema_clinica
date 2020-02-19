@@ -5,11 +5,9 @@ import Model.FolhaPagamentoModel;
 
 public class FolhaPagamentoView extends javax.swing.JFrame {
 
- 
     public FolhaPagamentoView() {
         initComponents();
     }
-
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -191,13 +189,9 @@ public class FolhaPagamentoView extends javax.swing.JFrame {
         FolhaPagamentoModel fpm = fpc.calcularSalario();
         lblInss.setText(String.valueOf(fpm.getInss()));
         lblIrrf.setText(String.valueOf(fpm.getIrrf()));
-        lblSalarioLiquido.setText(String.valueOf(fpm.getSalarioLiquido()));
-      
-        
-        
+        lblSalarioLiquido.setText(String.valueOf(fpm.getSalarioLiquido()));  
     }//GEN-LAST:event_jButton1ActionPerformed
 
-  
     public static void main(String args[]) {
      
         java.awt.EventQueue.invokeLater(new Runnable() {

@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Model;
 
-/**
- *
- * @author Vinicius
- */
 public class FuncionarioModel {
     private String matricula;
     private String nome;
@@ -23,7 +14,6 @@ public class FuncionarioModel {
     public FuncionarioModel() {
     }
 
-    
     public FuncionarioModel(String matricula, String nome, String sexo, double cpf, double rg, String endereco, Integer numero, String complemento, double cep) {
         this.matricula = matricula;
         this.nome = nome;
@@ -35,8 +25,6 @@ public class FuncionarioModel {
         this.complemento = complemento;
         this.cep = cep;
     }
-
-    
     
     public String getMatricula() {
         return matricula;
@@ -110,5 +98,6 @@ public class FuncionarioModel {
         this.cep = cep;
     }
     
-    public void cadastrarFuncionario(FuncionarioModel funcionario) {}
+    public void cadastrarFuncionario(FuncionarioModel funcionario) {
+    }
 }
