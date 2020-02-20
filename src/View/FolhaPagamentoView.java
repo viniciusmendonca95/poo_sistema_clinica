@@ -31,6 +31,7 @@ public class FolhaPagamentoView extends javax.swing.JFrame {
         txtNome = new javax.swing.JTextField();
         txtSalario = new javax.swing.JTextField();
         jSeparator3 = new javax.swing.JSeparator();
+        javax.swing.JButton jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -80,7 +81,14 @@ public class FolhaPagamentoView extends javax.swing.JFrame {
         jButton1.setText("Calcular");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                botaoCalcular(evt);
+            }
+        });
+
+        jButton2.setText("Limpar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoLimpar(evt);
             }
         });
 
@@ -121,12 +129,15 @@ public class FolhaPagamentoView extends javax.swing.JFrame {
                                 .addComponent(lblSalarioLiquido))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(287, 287, 287)
-                                .addComponent(jLabel8))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(300, 300, 300)
-                                .addComponent(jButton1)))
+                                .addComponent(jLabel8)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(159, 159, 159)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addGap(165, 165, 165))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -160,7 +171,9 @@ public class FolhaPagamentoView extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
@@ -182,15 +195,24 @@ public class FolhaPagamentoView extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void botaoCalcular(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCalcular
         FolhaPagamentoControl fpc = new FolhaPagamentoControl();
         double salario = Double.parseDouble(txtSalario.getText());
         fpc.setSalarioBruto(salario);
         FolhaPagamentoModel fpm = fpc.calcularSalario();
         lblInss.setText(String.valueOf(fpm.getInss()));
         lblIrrf.setText(String.valueOf(fpm.getIrrf()));
-        lblSalarioLiquido.setText(String.valueOf(fpm.getSalarioLiquido()));  
-    }//GEN-LAST:event_jButton1ActionPerformed
+        lblSalarioLiquido.setText(String.valueOf(fpm.getSalarioLiquido())); 
+        fpc.salvarFolhaPagamento();
+    }//GEN-LAST:event_botaoCalcular
+
+    private void botaoLimpar(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLimpar
+        txtNome.setText("");
+        txtSalario.setText("");
+        lblInss.setText("");
+        lblIrrf.setText("");
+        lblSalarioLiquido.setText(""); 
+    }//GEN-LAST:event_botaoLimpar
 
     public static void main(String args[]) {
      

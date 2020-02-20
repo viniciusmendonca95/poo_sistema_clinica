@@ -1,0 +1,4 @@
+null
+{"matricula":"123","nome":"123","sexo":"Outros","cpf":123.0,"rg":123.0,"endereco":"123","numero":123,"complemento":"123","cep":123.0}
+{"matricula":"1","nome":"Vinicius","sexo":"Feminino","cpf":123456.0,"rg":123456.0,"endereco":"Rua dos cornos","numero":123,"complemento":"Perto da Chicos mother","cep":696969.0}
+{"matricula":"123","nome":"123","sexo":"Masculino","cpf":123.0,"rg":123.0,"endereco":"123","numero":123,"complemento":"123","cep":123.0}

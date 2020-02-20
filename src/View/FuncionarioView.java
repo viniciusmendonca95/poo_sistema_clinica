@@ -229,9 +229,11 @@ public class FuncionarioView extends javax.swing.JFrame {
         Integer numero = Integer.parseInt(txtNum.getText());
         String complemento = txtComp.getText();
         Double cep = Double.parseDouble(txtCep.getText());
-                
+       
+        
         boolean result = funcionarioControler.cadastrarFuncionario(matricula, nome, sexo, cpf, rg, endereco, numero, complemento, cep);
         if (result) {
+            funcionarioControler.salvarFuncionario();
             JOptionPane.showMessageDialog(null, "Cadastrado com Sucesso");
         }
         else

@@ -1,0 +1,13 @@
+{"salarioBruto":2000.0,"inss":180.0,"irrf":0.0,"salarioLiquido":1820.0}
+{"salarioBruto":1000.0,"inss":80.0,"irrf":0.0,"salarioLiquido":920.0}
+{"salarioBruto":8000.0,"inss":817.66,"irrf":1105.7835,"salarioLiquido":6076.556500000001}
+{"salarioBruto":5000.0,"inss":550.0,"irrf":365.12,"salarioLiquido":4084.88}
+{"salarioBruto":5000.0,"inss":550.0,"irrf":365.12,"salarioLiquido":4084.88}
+{"salarioBruto":5000.0,"inss":550.0,"irrf":365.12,"salarioLiquido":4084.88}
+{"salarioBruto":5000.0,"inss":550.0,"irrf":365.12,"salarioLiquido":4084.88}
+{"salarioBruto":5000.0,"inss":550.0,"irrf":365.12,"salarioLiquido":4084.88}
+{"salarioBruto":5000.0,"inss":550.0,"irrf":365.12,"salarioLiquido":4084.88}
+{"salarioBruto":5000.0,"inss":550.0,"irrf":365.12,"salarioLiquido":4084.88}
+{"salarioBruto":5000.0,"inss":550.0,"irrf":365.12,"salarioLiquido":4084.88}
+{"salarioBruto":5000.0,"inss":550.0,"irrf":365.12,"salarioLiquido":4084.88}
+{"salarioBruto":1000.0,"inss":80.0,"irrf":0.0,"salarioLiquido":920.0}
