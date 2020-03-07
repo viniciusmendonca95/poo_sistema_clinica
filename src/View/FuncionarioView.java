@@ -222,7 +222,7 @@ public class FuncionarioView extends javax.swing.JFrame {
         FuncionarioControl funcionarioControler = new FuncionarioControl();
         String matricula = txtMatricula.getText();
         String nome = txtNome.getText();
-        String sexo = RdSexM.isSelected()? "Masculino": RdSexF.isSelected() ? "Feminino" : "Outros";
+        String sexo = RdSexM.isSelected()? "M": RdSexF.isSelected() ? "F" : "O";
         double cpf = Double.parseDouble(txtCpf.getText());
         double rg = Double.parseDouble(txtRg.getText());
         String endereco = txtEnd.getText();
