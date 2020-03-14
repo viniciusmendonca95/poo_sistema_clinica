@@ -5,9 +5,30 @@ public class FolhaPagamentoModel {
     private double inss;
     private double irrf;
     private double salarioLiquido;
+    private String nome;
 
     public FolhaPagamentoModel(double salarioBruto) {
         this.salarioBruto = salarioBruto;
+    }
+    
+    public FolhaPagamentoModel(double salarioBruto, double inss, double irrf, double salarioLiquido, String nome) {
+        this.salarioBruto = salarioBruto;
+        this.inss = inss;
+        this.irrf = irrf;
+        this.salarioLiquido = salarioLiquido;
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public double getSalarioBruto() {
+        return salarioBruto;
     }
     
     public double getInss(){

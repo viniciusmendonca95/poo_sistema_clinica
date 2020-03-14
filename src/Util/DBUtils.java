@@ -8,9 +8,6 @@ package Util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import principal.Principal;
 
 public class DBUtils {
   public Connection conectar() {

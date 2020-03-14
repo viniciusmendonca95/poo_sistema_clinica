@@ -1,29 +1,29 @@
 package Model;
 
 public class FuncionarioModel {
-    private String matricula;
     private String nome;
-    private String sexo;
-    private double cpf;
-    private double rg;
     private String endereco;
     private Integer numero;
     private String complemento;
-    private double cep;    
-
+    private String cep; 
+    private String sexo;
+    private String rg;
+    private String cpf;
+    private String matricula;
+   
     public FuncionarioModel() {
     }
 
-    public FuncionarioModel(String matricula, String nome, String sexo, double cpf, double rg, String endereco, Integer numero, String complemento, double cep) {
-        this.matricula = matricula;
+    public FuncionarioModel(String nome, String endereco, Integer numero, String complemento, String cep,  String sexo, String rg, String cpf, String matricula) {
         this.nome = nome;
-        this.sexo = sexo;
-        this.cpf = cpf;
-        this.rg = rg;
         this.endereco = endereco;
         this.numero = numero;
         this.complemento = complemento;
         this.cep = cep;
+        this.sexo = sexo;
+        this.rg = rg;
+        this.cpf = cpf;
+        this.matricula = matricula;
     }
     
     public String getMatricula() {
@@ -50,19 +50,19 @@ public class FuncionarioModel {
         this.sexo = sexo;
     }
 
-    public double getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(double cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
-    public double getRg() {
+    public String getRg() {
         return rg;
     }
 
-    public void setRg(double rg) {
+    public void setRg(String rg) {
         this.rg = rg;
     }
 
@@ -90,11 +90,11 @@ public class FuncionarioModel {
         this.complemento = complemento;
     }
 
-    public double getCep() {
+    public String getCep() {
         return cep;
     }
 
-    public void setCep(double cep) {
+    public void setCep(String cep) {
         this.cep = cep;
     }
     
